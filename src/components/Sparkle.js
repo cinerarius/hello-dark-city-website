@@ -8,7 +8,8 @@ const Particle = () => {
         opacity={1}
         color="white"
         size={2}
-        scale={5}
+        scale={1}
         noise={1} />
 }
-export default Particle;
+
+export default Particle
