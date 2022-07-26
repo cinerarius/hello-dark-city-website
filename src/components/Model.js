@@ -1,7 +1,7 @@
-import { useFBX, useFBXLoader } from '@react-three/drei'
+import { useFBXLoader } from '@react-three/drei'
 
-const Model = () =>{
-        const fbx = useFBXLoader('./assets/Model_1.fbx', true)
+const Model = () => {
+    const fbx = useFBXLoader('./assets/Model_1.fbx', true)
     return <primitive object={fbx.scene} dispose={null} />
 }
 

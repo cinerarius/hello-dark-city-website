@@ -3,7 +3,7 @@ import './App.css';
 
 import { Canvas } from '@react-three/fiber'
 
-import  Box  from './components/Box'
+import Box from './components/Box'
 import Particle from './components/Sparkle';
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
     <>
       <Canvas>
         <group>
-        <Box />
+          <Box />
         </group>
         <Particle />
       </Canvas>
