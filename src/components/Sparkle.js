@@ -1,8 +1,7 @@
 import React from 'react'
 import { Sparkles } from '@react-three/drei'
 
-const Particles = () => {
-    return (
+const Particle = () => {
         <Sparkles
             count={100}
             speed={0.3}
@@ -11,7 +10,5 @@ const Particles = () => {
             size={2}
             scale={5}
             noise={1} />
-    )
 }
-
-export default Particles
+export default Particle;
