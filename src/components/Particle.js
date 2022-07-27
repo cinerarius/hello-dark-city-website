@@ -4,9 +4,9 @@ import { Sparkles } from '@react-three/drei'
 
 
 const Particle = () => {
-    const amount = 100
+    const amount = 500
     const sizes = 0.5
-    const scale = [1,1,1]
+    const scale = [10,10,10]
     return (
         <Sparkles
         speed={0.05}
