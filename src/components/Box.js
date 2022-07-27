@@ -5,7 +5,7 @@ const Box = () => {
     return (
         <mesh>
             <boxGeometry />
-            <meshStandardMaterial />
+            <meshStandardMaterial color="skyblue"/>
             <OrbitControls />
         </mesh>
     );
