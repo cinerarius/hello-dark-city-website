@@ -13,9 +13,9 @@ import Particle from './components/Particle';
 function App() {
   return (
     <>
-      <Canvas camera={{ position: [0, 0, -0.5], fov: 75 }}>
+      <Canvas camera={{ position: [-0.5,0.5,3],  fov: 30 }}>
         <Particle />
-        <mesh>
+        <mesh  scale={[0.03,0.03,0.03]}>
           <Model />
         </mesh>
         <ambientLight intensity={0.1}/>
