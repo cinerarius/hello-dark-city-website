@@ -15,10 +15,8 @@ function App() {
     <>
       <Canvas camera={{ position: [-0.5,0.5,3],  fov: 30 }}>
         <Particle />
-        <mesh  scale={[0.03,0.03,0.03]}>
-          <Model />
-        </mesh>
-        <ambientLight intensity={0.1}/>
+        <Model />
+        <ambientLight intensity={1}/>
         <OrbitControls />
       </Canvas>
     </>
