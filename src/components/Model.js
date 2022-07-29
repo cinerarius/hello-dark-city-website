@@ -6,7 +6,7 @@ import { useControls } from "leva";
 const Model = () => {
     const { Model_scale, Model_position, Model_rotation } = useControls({
         Model_scale: [0.03, 0.03, 0.03],
-        Model_position: [-0.25, -0.05, -0.05],
+        Model_position: [-0.20, -0.05, 0.0],
         Model_rotation: [3.10 ,3.25 ,Math.PI * 1 ]
     });
     const gltf = useLoader(GLTFLoader, "/Homepage-scene.gltf");
