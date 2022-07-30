@@ -3,10 +3,9 @@ import './App.css';
 
 import { Canvas } from '@react-three/fiber'
 
-
-/*import Box from './components/Box'*/
+import Button from './components/Button';
 import Particle from './components/Particle';
-import { Model } from './components/Homepage-scene'
+import { Model } from './components/Model'
 
 function App() {
   return (
@@ -16,6 +15,7 @@ function App() {
         <Model />
         <ambientLight intensity={0.1}/>
       </Canvas>
+      <Button />
     </>
   );
 }
