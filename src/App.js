@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.css';
 
-
+import { OrbitControls } from '@react-three/drei/core';
 import { Canvas } from '@react-three/fiber'
 
 
 /*import Box from './components/Box'*/
-import Model from './components/Model'
 import Particle from './components/Particle';
+import { Model } from './components/Homepage-scene'
 
 function App() {
   return (
@@ -16,6 +16,7 @@ function App() {
         <Particle />
         <Model />
         <ambientLight intensity={0.1}/>
+        <OrbitControls />
       </Canvas>
     </>
   );
