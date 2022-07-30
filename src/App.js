@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
 
-import { OrbitControls } from '@react-three/drei/core';
 import { Canvas } from '@react-three/fiber'
 
 
@@ -16,7 +15,6 @@ function App() {
         <Particle />
         <Model />
         <ambientLight intensity={0.1}/>
-        <OrbitControls />
       </Canvas>
     </>
   );
