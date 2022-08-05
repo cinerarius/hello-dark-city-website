@@ -8,8 +8,8 @@ const Particle = () => {
     const { Particle_amount, Particle_sizes , Particle_scale, Particle_position } = useControls({ 
         Particle_amount: 200, 
         Particle_sizes: 0.5, 
-        Particle_scale: [2,0.5,1], 
-        Particle_position: [0, 0.3, 1.5] })
+        Particle_scale: [3,0.3,1], 
+        Particle_position: [0, -0.2, 1.5] })
     return (
         <Sparkles
         position={Particle_position}
