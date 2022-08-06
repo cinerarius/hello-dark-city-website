@@ -11,7 +11,32 @@ body,
     padding: 0;
 }
 
-body{
-    background-color: #00110A;
+body {
+    background-image: url('./assets/');
     position: fixed;
+}
+
+.nav {
+    display: flex;
+    margin-top: -300px;
+    margin-left: -525px;
+    padding: 0;
+    flex-flow: row;
+    justify-self: left;
+}
+
+ul {
+    display: flex;
+    position: absolute;
+    gap: 10px;
+}
+
+.btn {
+    display: -webkit-flex;
+    display: flexbox;
+    height: 20rem;
+    width: 15rem;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
 }
