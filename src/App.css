@@ -12,7 +12,12 @@ body,
 }
 
 body {
-    background-image: url('./assets/');
+    background-image: url('./assets/4-background-trees.png');
+    background-image: url('./assets/1-green\ mist-overlay.png');
+    background-image: url('./assets/2-foreground-trees.png');
+    background-image: url('./assets/5-background-trees.png');
+    background-image: url('./assets/6-sky.gif');
+    background-size: cover;
     position: fixed;
 }
 
@@ -28,7 +33,7 @@ body {
 ul {
     display: flex;
     position: absolute;
-    gap: 10px;
+    gap: 30px;
 }
 
 .btn {

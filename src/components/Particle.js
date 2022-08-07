@@ -5,19 +5,14 @@ import { Sparkles } from '@react-three/drei'
 import { useControls } from 'leva'
 
 const Particle = () => {  
-    const { Particle_amount, Particle_sizes , Particle_scale, Particle_position } = useControls({ 
-        Particle_amount: 200, 
-        Particle_sizes: 0.5, 
-        Particle_scale: [3,0.3,1], 
-        Particle_position: [0, -0.2, 1.5] })
     return (
         <Sparkles
-        position={Particle_position}
+        position={[0, -0.2, 1.5]}
         speed={0.05}
-        size={Particle_sizes} 
-        scale={Particle_scale} 
+        size={0.5} 
+        scale={[3,0.3,1]} 
         color="white" 
-        count={Particle_amount} />
+        count={200} />
     )
 }
 
