@@ -1,19 +1,22 @@
-import React, { Suspense } from 'react';
+import React, { Suspense, useEffect } from 'react';
 import './App.css';
 
 import { Canvas } from '@react-three/fiber'
-import { Html } from  '@react-three/drei'
+import { Html, OrbitControls } from  '@react-three/drei'
+import gsap from 'gsap'
 
 import Button from './components/Button'
 import { Model } from './components/Model'
 import Particle from './components/Particle';
-import Controls from './components/Controls'
 
 function App() {
+  useEffect(()=>{
+    gsap.to('camera.position',{ x: 0 })
+  })
   return (
     <>
       <Canvas camera={{ position: [-0.5, 0.5, 3], fov: 30 }}>
-        <Controls />
+        <OrbitControls />
         <Html>
           <Button />
         </Html>
