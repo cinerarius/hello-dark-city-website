@@ -8,6 +8,7 @@ import gsap from 'gsap'
 import Button from './components/Button'
 import { Model } from './components/Model'
 import Particle from './components/Particle';
+import { AnimationWrapper } from './components/Animation'
 
 function App() {
   useEffect(()=>{
@@ -20,6 +21,7 @@ function App() {
         <Html>
           <Button />
         </Html>
+        <AnimationWrapper />
         <Particle />
         <Suspense fallback={null}>
           <Model />
