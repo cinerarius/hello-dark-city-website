@@ -47,15 +47,17 @@ ul {
 
 .button1 {
     background-image: url('./assets/Buttons/ianua-ai-star-icon.png');
-
+    background-size: cover;
 }
 .button2 {
     background-image: url('./assets/Buttons/blog-star-icon.png');
-    
+    background-size: cover;
 }
 .button3 {
     background-image: url('./assets/Buttons/about-us-star-icon.png');
+    background-size: cover;
 }
 .button4 {
     background-image: url('./assets/Buttons/path-of-sol-star-icon.png');
+    background-size: cover;
 }
