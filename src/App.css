@@ -12,11 +12,6 @@ body,
 }
 
 body {
-    background-color: transparent;
-    background-image: url('./assets/Background/1-green mist-overlay.png');
-    background-image: url('./assets/Background/2-foreground-trees.png');
-    background-image: url('./assets/Background/5-background-trees.png');
-    background-image: url('./assets/Background/4-background-trees.png');
     background-image: url('./assets/Background/6-sky.gif');
     background-size: cover;
     position: fixed;
@@ -48,4 +43,19 @@ ul {
     justify-content: center;
     align-items: center;
     background-color: transparent;
+}
+
+.button1 {
+    background-image: url('./assets/Buttons/ianua-ai-star-icon.png');
+
+}
+.button2 {
+    background-image: url('./assets/Buttons/blog-star-icon.png');
+    
+}
+.button3 {
+    background-image: url('./assets/Buttons/about-us-star-icon.png');
+}
+.button4 {
+    background-image: url('./assets/Buttons/path-of-sol-star-icon.png');
 }
