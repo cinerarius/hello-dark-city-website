@@ -1,40 +1,38 @@
-# Getting Started with Create React App
+# Hello Dark City Website
+## How to start the website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+NOTE: Make sure to have npm installed and updated on your computer
 
-## Available Scripts
+Change your current directory to the project directory. 
+(You can use the command:  `$ cd hello-dark-city`)
 
-In the project directory, you can run:
+Install the dependencies by running `$ npm install` 
 
-### `npm start`
+Start the website by running `$ npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Packages used for building this project
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+[React](reactjs.org) - for reusability \
+[React Router](https://reactrouter.com/) - for managing the URL \
+[cursor-effects](https://github.com/tholman/cursor-effects) - for cursor effects
+[React Helmet](https://www.npmjs.com/package/react-helmet) - for better SEO \
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+NOTE: The version of the packages can be seen in the "package.json" file
 
-### `npm run build`
+## Hierarchy of the the project explained
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+NOTE: "~" represents the "hello-dark-city" directory and I tried to make the file functionality to be pretty self explanatory from the file name 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+All the assets(images, audios, videos, etc.) needed for this project will be placed in the "~/src/assets"
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The "index.js" file represents the file that renders the whole page to the html file located in "~/public/index.html"
 
-### `npm run eject`
+The "App.js" file puts the components together and manages routing
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+The Components needed for the project will stay into the "~/src/components" directory(with the exception of "App.js"), following the next rules:
+-   The component file and the component stylesheet will sit in the same directory, having the same name, with the exception of the extension(ex: | Component.js -> component file | Component.css -> component stylesheet |)
+-   The ids and classed that are used in the stylesheets will follow the kebab-case rule and will have very specific names that will not repeat, only if you want those classes or ids to be overwritten(because the stylesheets are rendered for the whole page, not just the component that uses it). NOTE: Please avoid using tags' names, beacuse they are overwritten the easiest!!!  
+-   Reusable components that do not follow a specific hierarchy in the project and can be used in different parts of code will be placed in " ~/src/components/reusables" directory. The rest will be placed in " ~/src/components" 
+-   The components that have subcomponents(that are not reusables) in their code will have a dedicated directory for those subcomponents(conatining them) named like the parent component
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.

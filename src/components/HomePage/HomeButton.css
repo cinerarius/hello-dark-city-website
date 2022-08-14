@@ -1,0 +1,61 @@
+.homepage-button{
+    position: relative;
+    /* top: 50%; */
+    height: 7%;
+    width: 30%;
+     min-width: 100px; 
+    max-width: 400px;
+
+    border: 0.1rem solid white;
+    background-color: black;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.homepage-button:hover{
+    border-color: var(--dark-city-green);
+} 
+
+
+@media (min-width:750px){
+    .homepage-button{
+        position: absolute;
+    }
+    #ai-chat-bot{
+        top: 50%;
+        left: 50%;
+        transform: translate(-110%, -150%);
+    } #about{
+        top: 50%;
+        left: 50%;
+        transform: translate(10%, -150%);
+    }
+    #path-of-sol{
+        top: 50%;
+        left: 50%;
+        transform: translate(10%, 50%);
+    }
+    #market{
+        top: 50%;
+        left: 50%;
+        transform: translate(-110%, 50%);
+    }
+}
+@media (max-width:1000px) {
+    
+}
+@media (max-width:750px) {
+    .homepage-button{
+        width:50%;
+    }
+}
+
+
+@media (max-height:600px) {
+    
+}
+
+

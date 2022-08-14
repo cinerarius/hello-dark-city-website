@@ -1,34 +1,30 @@
-import React, { Suspense, useEffect } from 'react';
-import './App.css';
+/*
+    Functionality: Builds the whole app, manages routing and the whole app state 
+*/
+import React from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-import { Canvas } from '@react-three/fiber'
-import { Html, OrbitControls } from  '@react-three/drei'
-import gsap from 'gsap'
+import "./App.css";
+import HomePage from "./components/HomePage.js";
+import LandingPage from "./components/LandingPage.js"
+import LinkPage from "./components/LinkPage";
 
-import Button from './components/Button'
-import { Model } from './components/Model'
-import Particle from './components/Particle';
-import { AnimationWrapper } from './components/Animation'
+import { ghostCursor } from 'cursor-effects';
 
-function App() {
-  useEffect(()=>{
-    gsap.to('camera.position',{ x: 0 })
-  })
-  return (
-    <>
-      <Canvas camera={{ position: [-0.5, 0.5, 3], fov: 30 }}>
-        <OrbitControls />
-        <Html>
-          <Button />
-        </Html>
-        <AnimationWrapper />
-        <Particle />
-        <Suspense fallback={null}>
-          <Model />
-        </Suspense>
-        <ambientLight intensity={0.01} />
-      </Canvas>
-    </>
-  );
+new ghostCursor();
+
+export default class App extends React.Component {
+
+    render() {
+        return (
+            <BrowserRouter  basename={process.env.PUBLIC_URL}>
+                <Routes>
+                    <Route path="/" exact element={<LandingPage />} />
+                    <Route path="/home" exact element={<HomePage />} />
+                    <Route path="/are-you-lost" exact element={<LinkPage />} />
+                </Routes>
+            </BrowserRouter>
+        )
+    }
+
 }
-export default App;
