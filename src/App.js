@@ -7,7 +7,7 @@ import gsap from 'gsap'
 
 import Button from './components/Button'
 import { Model } from './components/Model'
-import Particle from './components/Particle';
+import Particle from './components/Particle'
 
 function App() {
   useEffect(()=>{
@@ -24,7 +24,7 @@ function App() {
         <Suspense fallback={null}>
           <Model />
         </Suspense>
-        <ambientLight intensity={1} />
+        <ambientLight intensity={0.5} />
       </Canvas>
     </>
   );
