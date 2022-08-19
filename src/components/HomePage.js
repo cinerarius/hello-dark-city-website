@@ -6,7 +6,6 @@ import React, { Suspense } from 'react';
 import "./HomePage.css"
 
 import { Canvas } from '@react-three/fiber'
-import { Html } from '@react-three/drei'
 
 import Button from './Button'
 import { Model } from './Model'
@@ -28,13 +27,11 @@ function App() {
             <img src={ForegroundTrees2} alt=""></img>
             <img src={BackgroundTrees4} alt=""></img>
             <img src={BackgroundTrees5} alt=""></img>
-            <gif src={Sky} alt=""></gif>
+            <img src={Sky} alt=""></img>
          </div>
          <Menu/>
+         <Button/>
          <Canvas camera={{ position: [-0.5, 0.5, 3], fov: 30 }}>
-            <Html>
-               <Button />
-            </Html>
             <Particle />
             <Suspense fallback={null}>
                <Model />
