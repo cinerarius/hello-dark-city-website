@@ -11,6 +11,7 @@ import { Html } from '@react-three/drei'
 import Button from './Button'
 import { Model } from './Model'
 import Particle from './Particle'
+import Menu from "./reusables/Background/Menu";
 
 
 import GreenMist1 from "../assets/Background/1-green_mist-overlay.png"
@@ -29,6 +30,7 @@ function App() {
             <img src={BackgroundTrees5} alt=""></img>
             <gif src={Sky} alt=""></gif>
          </div>
+         <Menu/>
          <Canvas camera={{ position: [-0.5, 0.5, 3], fov: 30 }}>
             <Html>
                <Button />
