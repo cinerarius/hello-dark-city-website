@@ -1,0 +1,49 @@
+.link-page-button{
+    position: relative;
+    height: 3.2rem;
+    width: 10rem;
+
+    text-align: center;
+    text-decoration: none;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.link-page-button-text{
+    opacity:80%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.link-page-button:hover{
+    border-color: lime;
+}
+.link-page-button-text:hover{
+    opacity:100%;
+   
+    
+}
+.link-page-button-left:hover{
+    animation: link-page-button-left 0.2s forwards;
+
+}
+@keyframes link-page-button-left {
+    100%{
+        transform: translate(-20px);
+    }
+}
+.link-page-button-right:hover{
+    animation: link-page-button-right 0.2s forwards;
+
+}
+@keyframes link-page-button-right {
+    100%{
+        transform: translate(20px);
+    }
+}

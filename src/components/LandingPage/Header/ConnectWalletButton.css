@@ -1,0 +1,43 @@
+#connect-wallet-form{
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    /* transform: translate(-50%, -50%); */
+    margin-top:20px;
+   
+   
+
+    height: 2rem;
+    width: 12rem;
+    background:none;
+}
+#connect-wallet-button {
+    border-width: 0.1rem;
+    border-style: solid;
+    border-color: white;
+    background-color: black;
+}
+#connect-wallet-button:hover {
+    background-color: var(--dark-city-green);
+    color: black;
+
+
+}
+
+@media (max-width:1000px) {
+    #connect-wallet-form {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+@media (max-width:750px) {
+    
+}
+
+
+@media (max-height:600px) {
+    #connect-wallet-form{
+            margin-top:35px;
+    }
+}

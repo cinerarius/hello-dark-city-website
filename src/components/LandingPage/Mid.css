@@ -1,0 +1,13 @@
+#mid{
+    grid-row: 5/16;
+    /* background-color: red; */
+}
+@media (max-width:1000px) {
+    
+}
+@media (max-width:750px) {
+    
+}
+@media (max-height:600px) {
+    
+}

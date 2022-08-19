@@ -1,0 +1,15 @@
+header {
+    grid-row: 1/3;
+    /* background-color: cyan; */
+}
+@media (max-width:1000px) {
+
+}
+@media (max-width:750px) {
+    
+}
+
+
+@media (max-height:600px) {
+    
+}
