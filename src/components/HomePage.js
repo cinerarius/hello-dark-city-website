@@ -7,7 +7,7 @@ import "./HomePage.css"
 
 import { Canvas } from '@react-three/fiber'
 
-import Button from './Button'
+//import { Button } from './Button'
 import { Model } from './Model'
 import Particle from './Particle'
 import Menu from "./reusables/Background/Menu";
@@ -22,6 +22,13 @@ import BackgroundTrees5 from "../assets/Background/5-background-trees.png"
 function App() {
    return (
       <>
+         <Canvas camera={{ position: [-0.5, 0.5, 3], fov: 30 }}>
+            <Particle />
+            <Suspense fallback={null}>
+               <Model />
+            </Suspense>
+            <ambientLight intensity={0.5} />
+         </Canvas>
          <div id="images" style={{ height: "100vh", width: "100vw", position: "absolute" }}>
             <img src={GreenMist1} alt=""></img>
             <img src={ForegroundTrees2} alt=""></img>
@@ -30,14 +37,6 @@ function App() {
             <img src={Sky} alt=""></img>
          </div>
          <Menu/>
-         <Button/>
-         <Canvas camera={{ position: [-0.5, 0.5, 3], fov: 30 }}>
-            <Particle />
-            <Suspense fallback={null}>
-               <Model />
-            </Suspense>
-            <ambientLight intensity={0.5} />
-         </Canvas>
       </>
    );
 }

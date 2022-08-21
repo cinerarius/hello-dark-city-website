@@ -11,7 +11,7 @@ export function Model(props) {
   const texture = Texture_Loader.load('/Model.png')
   const material = new THREE.MeshStandardMaterial( {map: texture} )
   texture.flipY = false
-  const { nodes } = useGLTF('/Model.gltf')
+  const { nodes } = useGLTF('/IANUA_Model/Model.gltf')
   return (
     <group {...props} dispose={null}>
       <group position={[0,-0.4,0.7]} scale={[0.3,0.3,0.3]} rotation={[0,-Math.PI * 0.1,0]}>
@@ -21,4 +21,4 @@ export function Model(props) {
   )
 }
 
-useGLTF.preload('/Model.gltf')
+useGLTF.preload('/IANUA_Model/Model.gltf')
