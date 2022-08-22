@@ -25,7 +25,7 @@ function App() {
    return (
       <>
          <Canvas camera={{ position: [-0.5, 0.5, 3], fov: 30 }}>
-         <OrbitControls />
+            <OrbitControls />
             <Particle />
             <Suspense fallback={null}>
                <Animation />
@@ -41,6 +41,11 @@ function App() {
             <img src={BackgroundTrees4} alt=""></img>
             <img src={BackgroundTrees5} alt=""></img>
             <img src={Sky} alt=""></img>
+            <div className="Button">
+            <button onClick={() => { }}>Happy</button>
+            <button onClick={() => { }}>Waving</button>
+            <button onClick={() => { }}>Angry</button>
+            </div>
          </div>
          <Menu />
       </>
