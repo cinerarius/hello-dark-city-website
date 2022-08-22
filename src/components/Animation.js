@@ -12,6 +12,7 @@ export function Animation(props) {
 
   useEffect(() => {
     console.log(actions);
+    actions.Waving.play()
   }, [])
 
   return (
